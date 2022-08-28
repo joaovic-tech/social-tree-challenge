@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --color-light: #f1f1f1f1;
+  --color-dark: #0c0013;
+  --purple: #8338ec;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#cont-img {
+  display: grid;
+  gap: 0.8rem;
+  width: 15rem;
+  height: 15rem;
+  padding: 0.2rem;
+  margin: 0 auto;
+  background: var(--color-light);
+  border: 0.2rem solid var(--purple);
+  border-radius: 50%;
+  box-shadow: 0 0 50px var(--purple);
+  transition: 2s ease;
+}
+
+#cont-img img {
+  border-radius: 50%;
+  width: 100%;
+  transition: border-radius 2s ease;
+}
+
+#my-name {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--color-light);
+  text-shadow: 0 0 20px var(--color-light);
+}
+
+#list-link {
+  display: grid;
+  gap: 0.6rem;
+}
+
+ul li {
+  list-style: none;
+  transition: 0.22s linear;
+}
+ul li a {
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+#list-link li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20rem;
+  height: 2.5rem;
+  background: transparent;
+  color: var(--color-light);
+  border: 0.2rem solid var(--purple);
+  border-radius: 0.4rem;
+  transition: 0.3s ease;
+}
+
+#list-link li a:focus,
+#list-link li a:hover {
+  background: var(--purple);
+  color: var(--color-light);
+  box-shadow: 0 0 20px var(--purple);
+}
+
+#list-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+}
+
+#list-social li a {
+  font-size: 1.5rem;
+  color: var(--purple);
+  transition: 0.3s linear;
+}
+
+#list-social li:hover {
+  transform: translateY(-30%);
+}
+
+#list-social li a:focus,
+#list-social li a:hover {
+  color: var(--color-light);
+}
+
+#list-link li a:active,
+#list-social li:active {
+  transform: scale(4);
+}

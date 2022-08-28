@@ -5,7 +5,7 @@ Page in HTML and CSS with links to social networks. Rocketseat Discover Challeng
 
 <div align="center">
 
-![template](./template)
+![template](./template.png)
 
 </div>
 
